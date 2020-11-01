@@ -1,6 +1,6 @@
 {
   "name": "apirestfake",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fake API REST para proyectos para praticar y consumir datos de ella",
   "main": "server.js",
   "scripts": {

@@ -11,6 +11,12 @@ Una Servidor API REST Fake para jugar y consumir
 Fake API REST Server pensanda para jugar, consumir datos, etc.
 Podras hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de acuerdo a los valores que hay y con ello comprobar si tu código de tu app front o móvil funciona correctamente.
 
+## Enlaces
+
+- [GitHub](https://github.com/joseluisgs/APIRESTFake)
+- [DockerHub](https://hub.docker.com/r/joseluisgs/apirest-fake)
+- [NPM](https://www.npmjs.com/package/apirestfake)
+
 ## Funcionamiento
 
 Tienes varias formas de probar esta API REST Fake:
