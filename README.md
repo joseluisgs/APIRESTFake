@@ -15,13 +15,17 @@ Podras hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de ac
 
 - [GitHub](https://github.com/joseluisgs/APIRESTFake)
 - [DockerHub](https://hub.docker.com/r/joseluisgs/apirest-fake)
+- [Heroku](https://apirest-fake.herokuapp.com/)
 - [NPM](https://www.npmjs.com/package/apirestfake)
+- [JSON Server](https://my-json-server.typicode.com/joseluisgs/APIRESTFake)
 
 ## Funcionamiento
 
 Tienes varias formas de probar esta API REST Fake:
 
 - Usando la URL: https://my-json-server.typicode.com/joseluisgs/APIRESTFake. Podrás hacer las operaciones típicas REST/CRUD sobre varios recursos y obetener los códigos de respuesta. Al ser una Fake API REST estática los datos no cambian, siempre tienes disponible la imagen inicial.
+
+- Usando el despliegue en Heroku, usando la URL: https://apirest-fake.herokuapp.com/ Debes tener en cuenta que como en el caso anterior algunos cambios no sean visible, dado el uso del contenedor en Heroku.
 
 - Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor como se indica:
 
