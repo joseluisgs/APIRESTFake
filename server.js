@@ -14,7 +14,10 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(router);
 
+// Configuramos el puerto
 const port = process.env.PORT || 6969;
+
+// Lanzamos el servidor
 server.listen(port, () => {
   console.log(`⚑ Servidor JSON funcionando ✓ -> http://localhost:${port}`);
   console.log(`⚑ Fake API REST por joseluisgs ✓ -> https://github.com/joseluisgs/APIRESTFake`);
