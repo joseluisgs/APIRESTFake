@@ -1,10 +1,13 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
 
+// si quieres cambiar el path de tu bd o nombre de fichero json. 
+// Lo tengo puesto en la raiz para que sea accesible desde 
+// https://my-json-server.typicode.com/joseluisgs/APIRESTFake
 const path = require('path')
-const router = jsonServer.router(path.join(__dirname, '/bd/db.json'))
+// const router = jsonServer.router(path.join(__dirname, '/bd/db.json'))
+const router = jsonServer.router('db.json')
 
-// const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
