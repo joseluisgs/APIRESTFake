@@ -27,6 +27,7 @@ $npm start o $npm run serve
 
 ```
 
+- Si no tienes NodeJS, pero tienes Docker, puedes usar el propio Dockerfile existente o alguno de los scripts sh que existen, puedes constrir tú mismo la imagen o pudes usar la disponible en DockerHub
 
 ### Recursos
 
