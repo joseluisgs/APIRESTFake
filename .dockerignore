@@ -1,5 +1,7 @@
 node_modules
 npm-debug.log
+apirest-local-docker.sh
+apirest-remote-docker.sh
 
 # Log files
 npm-debug.log*

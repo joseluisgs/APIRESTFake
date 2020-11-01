@@ -17,17 +17,25 @@ Tienes varias formas de probar esta API REST Fake:
 
 - Usando la URL: https://my-json-server.typicode.com/joseluisgs/APIRESTFake. Podrás hacer las operaciones típicas REST/CRUD sobre varios recursos y obetener los códigos de respuesta. Al ser una Fake API REST estática los datos no cambian, siempre tienes disponible la imagen inicial.
 
-- Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor como se indica: 
+- Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor como se indica:
 
 ```bash
 $npm start o $npm run serve
 
 ⚑ Servidor JSON funcionando ✓ -> http://localhost:6969
 ⚑ Fake API REST por joseluisgs ✓ -> https://github.com/joseluisgs/APIRESTFake
-
 ```
 
-- Si no tienes NodeJS, pero tienes Docker, puedes usar el propio Dockerfile existente o alguno de los scripts sh que existen, puedes constrir tú mismo la imagen o pudes usar la disponible en DockerHub
+- Si no tienes NodeJS, pero tienes Docker, puedes usar el propio Dockerfile existente o alguno de los scripts sh que existen, puedes constrir tú mismo la imagen o pudes usar la disponible en DockerHub: https://hub.docker.com/r/joseluisgs/apirest-fake.
+
+```bash
+$sh apirest-remote-docker.sh o $sh apirest-local-docker.sh
+
+O Puedes decargarla:
+$docker pull joseluisgs/apirest-fake
+Y ejecutarla:
+$docker run -p 6969:6969 -d --name="apirest-fake"  joseluisgs/apirest-fake:latest
+```
 
 ### Recursos
 
