@@ -1,0 +1,28 @@
+{
+  "name": "apirestfake",
+  "version": "1.0.0",
+  "description": "Fake API REST para proyectos para praticar y consumir datos de ella",
+  "main": "server.js",
+  "scripts": {
+    "serve": "npm run start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseluisgs/APIRESTFake.git"
+  },
+  "keywords": [
+    "API",
+    "REST"
+  ],
+  "author": "joseluisgs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseluisgs/APIRESTFake/issues"
+  },
+  "homepage": "https://github.com/joseluisgs/APIRESTFake#readme",
+  "dependencies": {
+    "json-server": "^0.16.2",
+    "express": "^4.17.1"
+  }
+}

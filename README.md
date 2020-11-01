@@ -13,17 +13,19 @@ Podras hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de ac
 
 ## Funcionamiento
 
-Tienes varias formas de probar esta API REST Fake: 
-- Usando la URL: https://my-json-server.typicode.com/joseluisgs/APIRESTFake. Podrás hacer las operaciones típicas REST/CRUD sobre varios recursos y obetener los códigos de respuesta. Al ser una Fake API REST estática los datos no cambian, siempre tienes disponible la imagen inicial. 
+Tienes varias formas de probar esta API REST Fake:
+
+- Usando la URL: https://my-json-server.typicode.com/joseluisgs/APIRESTFake. Podrás hacer las operaciones típicas REST/CRUD sobre varios recursos y obetener los códigos de respuesta. Al ser una Fake API REST estática los datos no cambian, siempre tienes disponible la imagen inicial.
 
 ### Recursos
+
 - [JSON Server](https://github.com/typicode/json-server)
 - [JSON Place Holder](https://jsonplaceholder.typicode.com)
 - [My JSON Server](https://my-json-server.typicode.com/)
 
-
 ## Autor
-[José Luis González Sánchez](https://twitter.com/joseluisgonsan) 
+
+[José Luis González Sánchez](https://twitter.com/joseluisgonsan)
 
 [![Twitter](https://img.shields.io/twitter/follow/joseluisgonsan?style=social)](https://twitter.com/joseluisgonsan)
 
@@ -32,4 +34,3 @@ Tienes varias formas de probar esta API REST Fake:
 ## Licencia
 
 Este proyecto esta licenciado bajo licencia **MIT**, si desea saber más, visite el fichero [LICENSE](https://github.com/joseluisgs/APIRESTFake/blob/master/LICENSE) para su uso docente y educativo.
-
