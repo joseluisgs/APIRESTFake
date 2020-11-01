@@ -17,6 +17,17 @@ Tienes varias formas de probar esta API REST Fake:
 
 - Usando la URL: https://my-json-server.typicode.com/joseluisgs/APIRESTFake. Podrás hacer las operaciones típicas REST/CRUD sobre varios recursos y obetener los códigos de respuesta. Al ser una Fake API REST estática los datos no cambian, siempre tienes disponible la imagen inicial.
 
+- Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor como se indica: 
+
+```bash
+$npm start o $npm run serve
+
+⚑ Servidor JSON funcionando ✓ -> http://localhost:6969
+⚑ Fake API REST por joseluisgs ✓ -> https://github.com/joseluisgs/APIRESTFake
+
+```
+
+
 ### Recursos
 
 - [JSON Server](https://github.com/typicode/json-server)

@@ -17,5 +17,5 @@ server.use(router);
 const port = process.env.PORT || 6969;
 server.listen(port, () => {
   console.log(`⚑ Servidor JSON funcionando ✓ -> http://localhost:${port}`);
-  console.log(`⚑ Fake API REST por joseluisgs ✓ -> http://github.com/joseluisgs`);
+  console.log(`⚑ Fake API REST por joseluisgs ✓ -> https://github.com/joseluisgs/APIRESTFake`);
 })
