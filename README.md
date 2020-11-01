@@ -2,15 +2,24 @@
 
 Una Servidor API REST Fake para jugar y consumir
 
-[![Android](https://img.shields.io/badge/App-Android-g)](https://www.android.com/intl/es_es/)
-[![Kotlin](https://img.shields.io/badge/Code-Kotlin-blue)](https://kotlinlang.org/)
+[![Kotlin](https://img.shields.io/badge/API-REST-blue)](https://www.bbvaapimarket.com/es/mundo-api/api-rest-que-es-y-cuales-son-sus-ventajas-en-el-desarrollo-de-proyectos/)
 [![LICENSE](https://img.shields.io/badge/Lisence-MIT-green)](https://github.com/joseluisgs/APIRESTFake/blob/master/LICENSE)
 ![GitHub](https://img.shields.io/github/last-commit/joseluisgs/APIRESTFake)
 
 ## Descripción
 
-Fake Api REST Server usando https://jsonplaceholder.typicode.com/ y https://my-json-server.typicode.com/ pensando para jugar, consumir datos, etc.
-Podras hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de acuerdo a los valores que hay
+Fake Api REST Server pensanda para jugar, consumir datos, etc.
+Podras hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de acuerdo a los valores que hay y con ello comprobar si tu código de tu app front o móvil funciona correctamente.
+
+## Funcionamiento
+
+Tienes varias formas de probar esta API REST Fake: 
+- Usando la URL: https://my-json-server.typicode.com/joseluisgs/APIRESTFake. Podrás hacer las operaciones típicas REST/CRUD sobre varios recursos y obetener los códigos de respuesta. Al ser una Fake API REST estática los datos no cambian, siempre tienes disponible la imagen inicial. 
+
+### Recursos
+- [JSON Server](https://github.com/typicode/json-server)
+- [JSON Place Holder](https://jsonplaceholder.typicode.com)
+- [My JSON Server](https://my-json-server.typicode.com/)
 
 
 ## Autor
