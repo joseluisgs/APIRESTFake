@@ -12,7 +12,9 @@
     "prune": "npm prune --production",
     "undist": "rm -rf dist",
     "build": "npm run undist && babel src -d dist && cp -r 'public' 'dist/public' && cp -r 'src/bd' 'dist/bd'",
-    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 /tests"
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 /tests",
+    "test:cobertura": "jest --coverage",
+    "test:vigilar": "jest --watchAll"
   },
   "repository": {
     "type": "git",

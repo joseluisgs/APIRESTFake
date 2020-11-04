@@ -6,7 +6,8 @@ node_modules
 .env.*.local
 
 #dist server
-/dist/*
+/dist
+/coverage
 
 
 # Log files
