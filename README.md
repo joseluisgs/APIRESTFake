@@ -14,7 +14,7 @@ Una Servidor API REST Fake para jugar y consumir
 ## Descripción
 
 Fake API REST Server pensanda para jugar, consumir datos, etc.
-Podras hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de acuerdo a los valores que hay y con ello comprobar si tu código de tu app front o móvil funciona correctamente.
+Podrás hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de acuerdo a los valores que hay y con ello comprobar si tu código de tu app front o móvil funciona correctamente.
 
 ## Enlaces
 
@@ -35,7 +35,8 @@ Tienes varias formas de probar esta API REST Fake:
 - Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor de una de estas tres maneras:
 
 ```bash
-$npm run server (versión de desarrollo)
+$npm start (versón de producción, antes debes hacer $nmp run build)
+$npm run dev (versión de desarrollo)
 $npm run build y luego $npm start (versión de producción)
 $npm run watch (modo observación para ir haciendo cambios en tu código)
 
@@ -55,13 +56,17 @@ $docker run -p 6969:6969 -d --name="apirest-fake"  joseluisgs/apirest-fake:lates
 ```
 
 ### Testing
+
 Se ha implemenatdo una serie de test automatizados para comprobar que la API REST funciona correctamente usando [Jest](https://jestjs.io/es-ES/) y [SuperTest](https://github.com/visionmedia/supertest). Para testear puedes hacerlo:
 
 ```bash
-$npm test (modo una vez)
+$npm test (modo una vez todo)
 $npm test:cover (análisis de cobertura)
-$npm test:watch (modo wath de test)
+$npm run test:users (test sobre users)
+$npm run test:server (test sobre server)
+$npm test:watch (modo wath de test. Cuidado porque al cambiar BD entr en bucle al detectar cambios)
 ```
+
 ### Recursos adicionales
 
 - [JSON Server](https://github.com/typicode/json-server)

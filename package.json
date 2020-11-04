@@ -1,11 +1,11 @@
 {
   "name": "apirestfake",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "Fake API REST para proyectos para praticar y consumir datos de ella",
-  "main": "src/server.js",
+  "main": "dist/server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "server": "node --require @babel/register src/server.js",
+    "dev": "node --require @babel/register src/server.js",
     "lint": "eslint 'src/**/*.js'",
     "fix": "eslint --fix 'src/**/*.js'",
     "watch": "nodemon",
@@ -13,8 +13,10 @@
     "undist": "rm -rf dist",
     "build": "npm run undist && babel src -d dist && cp -r 'public' 'dist/public' && cp -r 'src/bd' 'dist/bd'",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000 /tests",
+    "test:users":"cross-env NODE_ENV=test jest --testTimeout=10000 /tests/users.test.js",
+    "test:server": "cross-env NODE_ENV=test jest --testTimeout=10000 /tests/server.test.js",
     "test:cover": "jest --coverage",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,11 @@
   },
   "keywords": [
     "API",
-    "REST"
+    "REST",
+    "Node",
+    "Json",
+    "Fake",
+    "Data"
   ],
   "author": "joseluisgs",
   "license": "MIT",
@@ -32,8 +38,9 @@
   },
   "homepage": "https://github.com/joseluisgs/APIRESTFake#readme",
   "dependencies": {
-    "json-server": "^0.16.2",
-    "express": "^4.17.1"
+    "@babel/runtime": "^7.12.5",
+    "express": "^4.17.1",
+    "json-server": "^0.16.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
