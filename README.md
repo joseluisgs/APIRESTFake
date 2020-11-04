@@ -2,8 +2,13 @@
 
 Una Servidor API REST Fake para jugar y consumir
 
-[![Kotlin](https://img.shields.io/badge/API-REST-blue)](https://www.bbvaapimarket.com/es/mundo-api/api-rest-que-es-y-cuales-son-sus-ventajas-en-el-desarrollo-de-proyectos/)
+[![APIREST](https://img.shields.io/badge/API-REST-violet)](https://www.bbvaapimarket.com/es/mundo-api/api-rest-que-es-y-cuales-son-sus-ventajas-en-el-desarrollo-de-proyectos/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue)](https://hub.docker.com/r/joseluisgs/apirest-fake)
+[![Heroku](https://img.shields.io/badge/Heroku-Ready-blueviolet)](https://apirest-fake.herokuapp.com/)
+[![NPM](https://img.shields.io/badge/NPM-Ready-red)](https://www.npmjs.com/package/apirestfake)
 [![LICENSE](https://img.shields.io/badge/Lisence-MIT-green)](https://github.com/joseluisgs/APIRESTFake/blob/master/LICENSE)
+[![JS Code](https://img.shields.io/badge/JS%20Code-ES2019-yellow)](https://www.ecma-international.org/ecma-262)
+[![JS Style](https://img.shields.io/badge/JS%20Style-AirBnB-ff69b4)](https://airbnb.io/javascript)
 ![GitHub](https://img.shields.io/github/last-commit/joseluisgs/APIRESTFake)
 
 ## Descripción
@@ -27,10 +32,12 @@ Tienes varias formas de probar esta API REST Fake:
 
 - Usando el despliegue en Heroku, usando la URL: https://apirest-fake.herokuapp.com/ Debes tener en cuenta que como en el caso anterior algunos cambios no sean visible, dado el uso del contenedor en Heroku.
 
-- Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor como se indica:
+- Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor de una de estas tres maneras:
 
 ```bash
-$npm start o $npm run serve o node server.js
+$npm run server (versión de desarrollo)
+$npm run build y luego $npm start (versión de producción)
+$npm run watch (modo observación para ir haciendo cambios en tu código)
 
 ⚑ Servidor JSON funcionando ✓ -> http://localhost:6969
 ⚑ Fake API REST por joseluisgs ✓ -> https://github.com/joseluisgs/APIRESTFake
@@ -47,7 +54,15 @@ Y ejecutarla:
 $docker run -p 6969:6969 -d --name="apirest-fake"  joseluisgs/apirest-fake:latest
 ```
 
-### Recursos
+### Testing
+Se ha implemenatdo una serie de test automatizados para comprobar que la API REST funciona correctamente usando [Jest](https://jestjs.io/es-ES/) y [SuperTest](https://github.com/visionmedia/supertest). Para testear puedes hacerlo:
+
+```bash
+$npm test (modo una vez)
+$npm test:cover (análisis de cobertura)
+$npm test:watch (modo wath de test)
+```
+### Recursos adicionales
 
 - [JSON Server](https://github.com/typicode/json-server)
 - [JSON Place Holder](https://jsonplaceholder.typicode.com)
