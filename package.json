@@ -24,7 +24,11 @@
   },
   "keywords": [
     "API",
-    "REST"
+    "REST",
+    "Node",
+    "Json",
+    "Fake",
+    "Data"
   ],
   "author": "joseluisgs",
   "license": "MIT",

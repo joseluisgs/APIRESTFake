@@ -35,7 +35,8 @@ Tienes varias formas de probar esta API REST Fake:
 - Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor de una de estas tres maneras:
 
 ```bash
-$npm run server (versión de desarrollo)
+$npm start (versón de producción, antes debes hacer $nmp run build)
+$npm run dev (versión de desarrollo)
 $npm run build y luego $npm start (versión de producción)
 $npm run watch (modo observación para ir haciendo cambios en tu código)
 

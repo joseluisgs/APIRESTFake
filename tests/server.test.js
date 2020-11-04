@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import server from '../src/server';
 
-// Testeando Users
+// Testeando Seervidor
 describe('Batería de Test Servidor', () => {
   let servicio;
   beforeAll(async () => {
