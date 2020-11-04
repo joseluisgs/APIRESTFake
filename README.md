@@ -14,7 +14,7 @@ Una Servidor API REST Fake para jugar y consumir
 ## Descripción
 
 Fake API REST Server pensanda para jugar, consumir datos, etc.
-Podras hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de acuerdo a los valores que hay y con ello comprobar si tu código de tu app front o móvil funciona correctamente.
+Podrás hacer GET, POST, PUT, DELETE, PATCH y recibir códigos de respuesta de acuerdo a los valores que hay y con ello comprobar si tu código de tu app front o móvil funciona correctamente.
 
 ## Enlaces
 
@@ -55,6 +55,7 @@ $docker run -p 6969:6969 -d --name="apirest-fake"  joseluisgs/apirest-fake:lates
 ```
 
 ### Testing
+
 Se ha implemenatdo una serie de test automatizados para comprobar que la API REST funciona correctamente usando [Jest](https://jestjs.io/es-ES/) y [SuperTest](https://github.com/visionmedia/supertest). Para testear puedes hacerlo:
 
 ```bash
@@ -62,6 +63,7 @@ $npm test (modo una vez)
 $npm test:cover (análisis de cobertura)
 $npm test:watch (modo wath de test)
 ```
+
 ### Recursos adicionales
 
 - [JSON Server](https://github.com/typicode/json-server)
