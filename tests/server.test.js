@@ -32,9 +32,20 @@ describe('Batería de tests de Users', () => {
 
   // Conjunto de test para GET
   describe('GET: Tests de obtención de usuarios ', () => {
-    test('GET: Obtiene todos los usuarios ', async () => {
+    test('GET All: Obtiene todos los usuarios ', async () => {
       const res = await request(servicio).get('/users');
       expect(res.statusCode).toEqual(200);
+    });
+    test('GET by ID: Obtiene el usuario con un ID', async () => {
+      const userId = 1;
+      const res = await request(servicio).get(`/users/${userId}`);
+      expect(res.statusCode).toEqual(200);
+      expect(res.body.id).toEqual(userId);
+    });
+    test('GET by ID: NO Obtiene el usuario con un ID', async () => {
+      const userId = "pepe";
+      const res = await request(servicio).get(`/users/${userId}`);
+      expect(res.statusCode).toEqual(404);
     });
   });
 });
