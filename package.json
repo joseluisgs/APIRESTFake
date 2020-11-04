@@ -11,7 +11,7 @@
     "watch": "nodemon",
     "prune": "npm prune --production",
     "undist": "rm -rf dist",
-    "build": "npm run undist && babel src -d dist && cp -r 'src/public' 'dist/public' && cp -r 'src/bd' 'dist/bd'"
+    "build": "npm run undist && babel src -d dist && cp -r 'public' 'dist/public' && cp -r 'src/bd' 'dist/bd'"
   },
   "repository": {
     "type": "git",
