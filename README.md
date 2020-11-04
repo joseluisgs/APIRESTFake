@@ -54,7 +54,15 @@ Y ejecutarla:
 $docker run -p 6969:6969 -d --name="apirest-fake"  joseluisgs/apirest-fake:latest
 ```
 
-### Recursos
+### Testing
+Se ha implemenatdo una serie de test automatizados para comprobar que la API REST funciona correctamente usando [Jest](https://jestjs.io/es-ES/) y [SuperTest](https://github.com/visionmedia/supertest). Para testear puedes hacerlo:
+
+```bash
+$npm test (modo una vez)
+$npm test:cover (análisis de cobertura)
+$npm test:watch (modo wath de test)
+```
+### Recursos adicionales
 
 - [JSON Server](https://github.com/typicode/json-server)
 - [JSON Place Holder](https://jsonplaceholder.typicode.com)
