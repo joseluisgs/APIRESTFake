@@ -32,11 +32,12 @@ Tienes varias formas de probar esta API REST Fake:
 
 - Usando el despliegue en Heroku, usando la URL: https://apirest-fake.herokuapp.com/ Debes tener en cuenta que como en el caso anterior algunos cambios no sean visible, dado el uso del contenedor en Heroku.
 
-- Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor como se indica:
+- Usando NodeJS, para ello solo debes descargarte el proyecto de GitHub, debes tener instalado NodeJS. en el directorio db, como db.json tienes a Base de Datos JSON para utilizarla. Esta sí acepta cambios. Puedes colocar como db.json el fichero que quieras para praticar. Una vez bajado el repositorio, puedes iniciar el servidor de una de estas tres maneras:
 
 ```bash
 $npm run server (versión de desarrollo)
 $npm run build y luego $npm start (versión de producción)
+$npm run watch (modo observación para ir haciendo cambios en tu código)
 
 ⚑ Servidor JSON funcionando ✓ -> http://localhost:6969
 ⚑ Fake API REST por joseluisgs ✓ -> https://github.com/joseluisgs/APIRESTFake
