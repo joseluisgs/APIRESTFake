@@ -6,8 +6,8 @@ node_modules
 .env.*.local
 
 #dist server
-# /dist (copio la última copia a Heroku)
-/coverage
+dist
+coverage
 
 
 # Log files
