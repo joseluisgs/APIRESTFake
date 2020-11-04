@@ -1,6 +1,6 @@
 {
   "name": "apirestfake",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Fake API REST para proyectos para praticar y consumir datos de ella",
   "main": "dist/server.js",
   "scripts": {
@@ -13,8 +13,10 @@
     "undist": "rm -rf dist",
     "build": "npm run undist && babel src -d dist && cp -r 'public' 'dist/public' && cp -r 'src/bd' 'dist/bd'",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000 /tests",
+    "test:users":"cross-env NODE_ENV=test jest --testTimeout=10000 /tests/users.test.js",
+    "test:server": "cross-env NODE_ENV=test jest --testTimeout=10000 /tests/server.test.js",
     "test:cover": "jest --coverage",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",

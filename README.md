@@ -59,9 +59,11 @@ $docker run -p 6969:6969 -d --name="apirest-fake"  joseluisgs/apirest-fake:lates
 Se ha implemenatdo una serie de test automatizados para comprobar que la API REST funciona correctamente usando [Jest](https://jestjs.io/es-ES/) y [SuperTest](https://github.com/visionmedia/supertest). Para testear puedes hacerlo:
 
 ```bash
-$npm test (modo una vez)
+$npm test (modo una vez todo)
 $npm test:cover (análisis de cobertura)
-$npm test:watch (modo wath de test)
+$npm run test:users (test sobre users)
+$npm run test:server (test sobre server)
+$npm test:watch (modo wath de test. Cuidado porque al cambiar BD entr en bucle al detectar cambios)
 ```
 
 ### Recursos adicionales
