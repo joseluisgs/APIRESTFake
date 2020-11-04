@@ -21,7 +21,7 @@ describe('Batería de tests de Users', () => {
   // Es costoso arrancar y apagar el servidor
   // Recuerda que devuelve una promesa cuando el servidor esté listo
   beforeAll(async () => {
-    servicio = await server.start();
+    servicio = server.start();
   });
 
   // Al terminar lo cerramos. Cambio afterEach por after
@@ -63,7 +63,7 @@ describe('Batería de tests de Users', () => {
         email: 'insert@insert.test',
         avatar: 'https://eu.ui-avatars.com/api/?name=test&background=random',
       };
-      const res = await (await request(servicio).post('/users').send(newUser));
+      const res = await request(servicio).post('/users').send(newUser);
       expect(res.statusCode).toEqual(201);
       // Chequeamos propiedades con valores
       expect(res.body).toHaveProperty('name', newUser.name);
@@ -79,7 +79,7 @@ describe('Batería de tests de Users', () => {
         email: 'update@update.test',
         avatar: 'https://eu.ui-avatars.com/api/?name=test&background=random',
       };
-      const res = await (await request(servicio).put(`/users/${userTestID}`).send(updateUser));
+      const res = await request(servicio).put(`/users/${userTestID}`).send(updateUser);
       expect(res.statusCode).toEqual(200);
       // Chequeamos propiedades y valores
       expect(res.body).toHaveProperty('name', updateUser.name);
@@ -93,9 +93,20 @@ describe('Batería de tests de Users', () => {
         email: 'update@update.test',
         avatar: 'https://eu.ui-avatars.com/api/?name=test&background=random',
       };
-      const res = await (await request(servicio).put(`/users/${userID}`).send(updateUser));
+      const res = (await request(servicio).put(`/users/${userID}`).send(updateUser));
       expect(res.statusCode).toEqual(404);
       // Chequeamos propiedades y valores
+    });
+  });
+  describe('DELETE: Tests de borrado de usuarios ', () => {
+    test('DELETE: Elimina un usuario por ID', async () => {
+      const res = await request(servicio).delete(`/users/${userTestID}`);
+      expect(res.statusCode).toEqual(200);
+    });
+    test('DELETE: NO Elimina un usuario por ID', async () => {
+      const userID = 'pepe';
+      const res = await request(servicio).delete(`/users/${userID}`);
+      expect(res.statusCode).toEqual(404);
     });
   });
 });
