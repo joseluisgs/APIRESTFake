@@ -77,9 +77,7 @@ $npm test:watch (modo wath de test. Cuidado porque al cambiar BD entr en bucle a
 
 [José Luis González Sánchez](https://twitter.com/joseluisgonsan)
 
-[![Twitter](https://img.shields.io/twitter/follow/joseluisgonsan?style=social)](https://twitter.com/joseluisgonsan)
-
-[![GitHub](https://img.shields.io/github/followers/joseluisgs?style=social)](https://github.com/joseluisgs)
+[![Twitter](https://img.shields.io/twitter/follow/joseluisgonsan?style=social)](https://twitter.com/joseluisgonsan) [![GitHub](https://img.shields.io/github/followers/joseluisgs?style=social)](https://github.com/joseluisgs)
 
 ## Licencia
 
